@@ -98,7 +98,8 @@ func main() {
 	// Load .env file
 	err := godotenv.Load()
 	if err != nil {
-		log.Fatalf("Error loading .env file: %v", err)
+		log.Printf("Error loading .env file: %v", err)
+		// Continue execution even if .env file is not found
 	}
 
 	// Read config.json
@@ -113,12 +114,6 @@ func main() {
 		log.Fatalf("Error parsing config file: %v", err)
 	}
 
-	// Move config.json to config.json.old
-	err = os.Rename("config.json", "config.json.old")
-	if err != nil {
-		log.Fatalf("Error renaming config file: %v", err)
-	}
-
 	fmt.Println("Network start blocks from config:")
 	for network, block := range config.NetworkStartBlock {
 		fmt.Printf("%s: %d\n", network, block)
@@ -126,19 +121,19 @@ func main() {
 	fmt.Println()
 
 	networks := []Network{
-		{"Ethereum", os.Getenv("ETHEREUM_RPC_URL"), "ethereum"},
-		{"Polygon", os.Getenv("POLYGON_RPC_URL"), "ethereum"},
-		{"Avalanche", os.Getenv("AVALANCHE_RPC_URL"), "ethereum"},
-		{"Optimism", os.Getenv("OPTIMISM_RPC_URL"), "ethereum"},
-		{"Arbitrum", os.Getenv("ARBITRUM_RPC_URL"), "ethereum"},
-		{"Gnosis", os.Getenv("GNOSIS_RPC_URL"), "ethereum"},
-		{"Linea", os.Getenv("LINEA_RPC_URL"), "ethereum"},
-		{"Binance Smart Chain", os.Getenv("BSC_RPC_URL"), "ethereum"},
-		{"Base", os.Getenv("BASE_RPC_URL"), "ethereum"},
-		{"Crossbell", os.Getenv("CROSSBELL_RPC_URL"), "ethereum"},
-		{"VSL", os.Getenv("VSL_RPC_URL"), "ethereum"},
-		{"X-Layer", os.Getenv("XLAYER_RPC_URL"), "ethereum"},
-		{"Arweave", os.Getenv("ARWEAVE_RPC_URL"), "arweave"},
+		{"ethereum", os.Getenv("ETHEREUM_RPC_URL"), "ethereum"},
+		{"polygon", os.Getenv("POLYGON_RPC_URL"), "ethereum"},
+		{"avax", os.Getenv("AVALANCHE_RPC_URL"), "ethereum"},
+		{"optimism", os.Getenv("OPTIMISM_RPC_URL"), "ethereum"},
+		{"arbitrum", os.Getenv("ARBITRUM_RPC_URL"), "ethereum"},
+		{"gnosis", os.Getenv("GNOSIS_RPC_URL"), "ethereum"},
+		{"linea", os.Getenv("LINEA_RPC_URL"), "ethereum"},
+		{"binance-smart-chain", os.Getenv("BSC_RPC_URL"), "ethereum"},
+		{"base", os.Getenv("BASE_RPC_URL"), "ethereum"},
+		{"crossbell", os.Getenv("CROSSBELL_RPC_URL"), "ethereum"},
+		{"vsl", os.Getenv("VSL_RPC_URL"), "ethereum"},
+		{"x-layer", os.Getenv("XLAYER_RPC_URL"), "ethereum"},
+		{"arweave", os.Getenv("ARWEAVE_RPC_URL"), "arweave"},
 	}
 
 	for _, network := range networks {
@@ -224,6 +219,12 @@ func main() {
 		fmt.Println()
 	}
 
+	// Update Farcaster timestamp
+	farcasterTimestamp := targetTimestamp - (9 * 30 * 24 * 60 * 60) // Subtract 9 months (approx.)
+	config.NetworkStartBlock["farcaster"] = farcasterTimestamp
+	fmt.Printf("Updated start block for farcaster: %d\n", farcasterTimestamp)
+	fmt.Println()
+
 	// Write updated config back to file
 	updatedConfig, err := json.MarshalIndent(config, "", "  ")
 	if err != nil {
@@ -232,7 +233,17 @@ func main() {
 
 	err = os.WriteFile("config.json", updatedConfig, 0644)
 	if err != nil {
-		log.Fatalf("Error writing updated config file: %v", err)
+		// If writing fails, try to retry a few times
+		for i := 0; i < 3; i++ {
+			time.Sleep(time.Second) // Wait for a second before retrying
+			err = os.WriteFile("config.json", updatedConfig, 0644)
+			if err == nil {
+				break
+			}
+		}
+		if err != nil {
+			log.Fatalf("Error writing updated config file after retries: %v", err)
+		}
 	}
 
 	fmt.Println("Config file updated successfully.")
