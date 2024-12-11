@@ -93,7 +93,7 @@ func findClosestBlockArweave(client arweave.Client, targetTimestamp int64) (int6
 }
 
 func main() {
-	targetTimestamp := int64(1717200000)
+	targetTimestamp := int64(1722470400)
 
 	// Load .env file
 	err := godotenv.Load()
