@@ -1,18 +1,18 @@
 {
   "network_start_block": {
-    "arbitrum": 248786697,
-    "arweave": 1497396,
-    "avax": 49964900,
-    "base": 19179727,
-    "binance-smart-chain": 41858064,
-    "crossbell": 74773056,
-    "ethereum": 20651994,
-    "farcaster": 1701820800,
-    "gnosis": 35769268,
-    "linea": 8867522,
-    "optimism": 124775012,
-    "polygon": 61278975,
-    "vsl": 7645141,
-    "x-layer": 4430613
+    "arbitrum": 269733500,
+    "arweave": 1538545,
+    "avax": 52499565,
+    "base": 21814927,
+    "binance-smart-chain": 43613076,
+    "crossbell": 80000487,
+    "ethereum": 21089069,
+    "farcaster": 1707091200,
+    "gnosis": 36792483,
+    "linea": 11476601,
+    "optimism": 127410212,
+    "polygon": 63732941,
+    "vsl": 10280341,
+    "x-layer": 6169329
   }
 }
