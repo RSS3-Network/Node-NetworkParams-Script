@@ -21,68 +21,68 @@
     },
     "network_start_block": {
         "arbitrum": {
-            "block": 269733500,
-            "timestamp": 1730419200
+            "block": 280041506,
+            "timestamp": 1733011200
         },
         "arweave": {
-            "block": 1538545,
-            "timestamp": 1730419200
+            "block": 1558797,
+            "timestamp": 1733011200
         },
         "avax": {
-            "block": 52499565,
-            "timestamp": 1730419200
+            "block": 53764010,
+            "timestamp": 1733011200
         },
         "base": {
-            "block": 21814927,
-            "timestamp": 1730419200
+            "block": 23110927,
+            "timestamp": 1733011200
         },
         "binance-smart-chain": {
-            "block": 43613076,
-            "timestamp": 1730419200
+            "block": 44476797,
+            "timestamp": 1733011200
         },
         "crossbell": {
-            "block": 80000487,
-            "timestamp": 1730419200
+            "block": 82592487,
+            "timestamp": 1733011200
         },
         "ethereum": {
-            "block": 21089069,
-            "timestamp": 1730419200
+            "block": 21303934,
+            "timestamp": 1733011200
         },
         "farcaster": {
-            "block": 1707091200,
+            "block": 1709683200,
             "timestamp": 1706745600
         },
         "gnosis": {
-            "block": 36792483,
-            "timestamp": 1730419200
+            "block": 37294152,
+            "timestamp": 1733011200
         },
         "linea": {
-            "block": 11476601,
-            "timestamp": 1730419200
+            "block": 12744926,
+            "timestamp": 1733011200
         },
         "optimism": {
-            "block": 127410212,
-            "timestamp": 1730419200
+            "block": 128706212,
+            "timestamp": 1733011200
         },
         "polygon": {
-            "block": 63732941,
-            "timestamp": 1730419200
+            "block": 64932349,
+            "timestamp": 1733011200
         },
         "vsl": {
-            "block": 10280341,
-            "timestamp": 1730419200
+            "block": 11576341,
+            "timestamp": 1733011200
         },
         "x-layer": {
-            "block": 6169329,
-            "timestamp": 1730419200
+            "block": 7026091,
+            "timestamp": 1733011200
         },
         "near": {
-            "block": 136350003,
-            "timestamp": 1735689600
+            "block": 138720003,
+            "timestamp": 1738421658
         },
         "mastodon": {
-            "block": 1730419200,
-            "timestamp": 1730419200
+            "block": 1733011200,
+            "timestamp": 1733011200
         }
     },
     "network_core_worker_disk_space_per_month": {
