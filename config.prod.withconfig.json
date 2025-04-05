@@ -2059,6 +2059,81 @@
                         "id": {
                             "is_required": true,
                             "type": "string",
+                            "value": "polygon-1inch",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "polygon",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "1inch",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "polygon",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 0.5,
+                            "memory_in_gb": 0.5,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
                             "value": "polygon-aave",
                             "description": "Worker's id, must be unique, for example '[network]-[worker]'",
                             "title": "ID",
@@ -2525,6 +2600,81 @@
                         "id": {
                             "is_required": true,
                             "type": "string",
+                            "value": "polygon-paraswap",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "polygon",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "paraswap",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "polygon",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 0.5,
+                            "memory_in_gb": 0.5,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
                             "value": "polygon-polymarket",
                             "description": "Worker's id, must be unique, for example '[network]-[worker]'",
                             "title": "ID",
@@ -2692,6 +2842,81 @@
                             "is_required": true,
                             "type": "string",
                             "value": "stargate",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "polygon",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 1,
+                            "memory_in_gb": 1,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "polygon-uniswap",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "polygon",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "uniswap",
                             "description": "Name of the worker",
                             "title": "Worker",
                             "key": "worker"
@@ -2923,6 +3148,81 @@
                             "cpu_core": 2,
                             "memory_in_gb": 2,
                             "disk_space_in_gb": 100,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "optimism-1inch",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "optimism",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "1inch",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "optimism",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 0.5,
+                            "memory_in_gb": 0.5,
+                            "disk_space_in_gb": 4,
                             "title": "Minimum Resource",
                             "key": "minimum_resource"
                         }
@@ -3389,6 +3689,81 @@
                         "id": {
                             "is_required": true,
                             "type": "string",
+                            "value": "optimism-paraswap",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "optimism",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "paraswap",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "optimism",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 0.5,
+                            "memory_in_gb": 0.5,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
                             "value": "optimism-rainbow",
                             "description": "Worker's id, must be unique, for example '[network]-[worker]'",
                             "title": "ID",
@@ -3481,6 +3856,81 @@
                             "is_required": true,
                             "type": "string",
                             "value": "stargate",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "optimism",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 1,
+                            "memory_in_gb": 1,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "optimism-uniswap",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "optimism",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "uniswap",
                             "description": "Name of the worker",
                             "title": "Worker",
                             "key": "worker"
@@ -3720,6 +4170,81 @@
                         "id": {
                             "is_required": true,
                             "type": "string",
+                            "value": "arbitrum-1inch",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "arbitrum",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "1inch",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "arbitrum",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 0.5,
+                            "memory_in_gb": 0.5,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
                             "value": "arbitrum-aave",
                             "description": "Worker's id, must be unique, for example '[network]-[worker]'",
                             "title": "ID",
@@ -3812,6 +4337,81 @@
                             "is_required": true,
                             "type": "string",
                             "value": "arbitrum",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "arbitrum",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 0.5,
+                            "memory_in_gb": 0.5,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "arbitrum-cow",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "arbitrum",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "cow",
                             "description": "Name of the worker",
                             "title": "Worker",
                             "key": "worker"
@@ -4020,6 +4620,81 @@
                         "id": {
                             "is_required": true,
                             "type": "string",
+                            "value": "arbitrum-paraswap",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "arbitrum",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "paraswap",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "arbitrum",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 0.5,
+                            "memory_in_gb": 0.5,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
                             "value": "arbitrum-rainbow",
                             "description": "Worker's id, must be unique, for example '[network]-[worker]'",
                             "title": "ID",
@@ -4112,6 +4787,81 @@
                             "is_required": true,
                             "type": "string",
                             "value": "stargate",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "arbitrum",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 1,
+                            "memory_in_gb": 1,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "arbitrum-uniswap",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "arbitrum",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "uniswap",
                             "description": "Name of the worker",
                             "title": "Worker",
                             "key": "worker"
@@ -4351,6 +5101,81 @@
                         "id": {
                             "is_required": true,
                             "type": "string",
+                            "value": "base-1inch",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "base",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "1inch",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "base",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 0.5,
+                            "memory_in_gb": 0.5,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
                             "value": "base-aave",
                             "description": "Worker's id, must be unique, for example '[network]-[worker]'",
                             "title": "ID",
@@ -4501,6 +5326,231 @@
                         "id": {
                             "is_required": true,
                             "type": "string",
+                            "value": "base-cow",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "base",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "cow",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "base",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 0.5,
+                            "memory_in_gb": 0.5,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "base-curve",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "base",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "curve",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "base",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 1,
+                            "memory_in_gb": 1,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "base-paraswap",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "base",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "paraswap",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "base",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 0.5,
+                            "memory_in_gb": 0.5,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
                             "value": "base-rainbow",
                             "description": "Worker's id, must be unique, for example '[network]-[worker]'",
                             "title": "ID",
@@ -4593,6 +5643,81 @@
                             "is_required": true,
                             "type": "string",
                             "value": "stargate",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "base",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 1,
+                            "memory_in_gb": 1,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "base-uniswap",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "base",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "uniswap",
                             "description": "Name of the worker",
                             "title": "Worker",
                             "key": "worker"
@@ -5021,6 +6146,81 @@
                         "id": {
                             "is_required": true,
                             "type": "string",
+                            "value": "avax-1inch",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "avax",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "1inch",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "avax",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 0.25,
+                            "memory_in_gb": 0.25,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
                             "value": "avax-aave",
                             "description": "Worker's id, must be unique, for example '[network]-[worker]'",
                             "title": "ID",
@@ -5171,6 +6371,81 @@
                         "id": {
                             "is_required": true,
                             "type": "string",
+                            "value": "avax-paraswap",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "avax",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "paraswap",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "avax",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 0.25,
+                            "memory_in_gb": 0.25,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
                             "value": "avax-rainbow",
                             "description": "Worker's id, must be unique, for example '[network]-[worker]'",
                             "title": "ID",
@@ -5263,6 +6538,81 @@
                             "is_required": true,
                             "type": "string",
                             "value": "stargate",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "avax",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 0.5,
+                            "memory_in_gb": 0.5,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "avax-uniswap",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "avax",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "uniswap",
                             "description": "Name of the worker",
                             "title": "Worker",
                             "key": "worker"
@@ -5608,6 +6958,306 @@
                         "id": {
                             "is_required": true,
                             "type": "string",
+                            "value": "binance-smart-chain-1inch",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "binance-smart-chain",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "1inch",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "binance-smart-chain",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 0.5,
+                            "memory_in_gb": 0.5,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "binance-smart-chain-aave",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "binance-smart-chain",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "aave",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "binance-smart-chain",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 0.5,
+                            "memory_in_gb": 0.5,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "binance-smart-chain-curve",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "binance-smart-chain",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "curve",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "binance-smart-chain",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 1,
+                            "memory_in_gb": 1,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "binance-smart-chain-paraswap",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "binance-smart-chain",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "paraswap",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "binance-smart-chain",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 0.5,
+                            "memory_in_gb": 0.5,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
                             "value": "binance-smart-chain-rainbow",
                             "description": "Worker's id, must be unique, for example '[network]-[worker]'",
                             "title": "ID",
@@ -5700,6 +7350,81 @@
                             "is_required": true,
                             "type": "string",
                             "value": "stargate",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "binance-smart-chain",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 1,
+                            "memory_in_gb": 1,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "binance-smart-chain-uniswap",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "binance-smart-chain",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "uniswap",
                             "description": "Name of the worker",
                             "title": "Worker",
                             "key": "worker"
@@ -5931,6 +7656,231 @@
                             "cpu_core": 2,
                             "memory_in_gb": 2,
                             "disk_space_in_gb": 36,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "gnosis-1inch",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "gnosis",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "1inch",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "gnosis",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 0.5,
+                            "memory_in_gb": 0.5,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "gnosis-aave",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "gnosis",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "aave",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "gnosis",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 0.5,
+                            "memory_in_gb": 0.5,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "gnosis-cow",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "gnosis",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "cow",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "gnosis",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 0.5,
+                            "memory_in_gb": 0.5,
+                            "disk_space_in_gb": 4,
                             "title": "Minimum Resource",
                             "key": "minimum_resource"
                         }
@@ -6676,6 +8626,81 @@
                         "id": {
                             "is_required": true,
                             "type": "string",
+                            "value": "x-layer-curve",
+                            "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                            "title": "ID",
+                            "key": "id"
+                        },
+                        "network": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "x-layer",
+                            "description": "The network where the worker operates on",
+                            "title": "Network",
+                            "key": "network"
+                        },
+                        "worker": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "curve",
+                            "description": "Name of the worker",
+                            "title": "Worker",
+                            "key": "worker"
+                        },
+                        "endpoint": {
+                            "is_required": true,
+                            "type": "string",
+                            "value": "x-layer",
+                            "description": "An external endpoint to fetch data from, for example, a blockchain RPC endpoint or a Farcaster api",
+                            "title": "Endpoint",
+                            "key": "endpoint"
+                        },
+                        "parameters": {
+                            "concurrent_block_requests": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of concurrent RPC requests to the blockchain rpc. Default: 8",
+                                "title": "Concurrent Block Requests",
+                                "key": "parameters.concurrent_block_requests"
+                            },
+                            "block_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch in a single RPC request. Default: 8",
+                                "title": "Block Batch Size",
+                                "key": "parameters.block_batch_size"
+                            },
+                            "receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 200,
+                                "description": "The number of receipts to fetch in a single RPC request. Default: 200",
+                                "title": "Receipts Batch Size",
+                                "key": "parameters.receipts_batch_size"
+                            },
+                            "block_receipts_batch_size": {
+                                "is_required": false,
+                                "type": "uint",
+                                "value": 8,
+                                "description": "The number of blocks to fetch receipts in a single RPC request. Default: 8",
+                                "title": "Block Receipt Batch Size",
+                                "key": "parameters.block_receipts_batch_size"
+                            }
+                        },
+                        "minimum_resource": {
+                            "cpu_core": 0.5,
+                            "memory_in_gb": 0.5,
+                            "disk_space_in_gb": 4,
+                            "title": "Minimum Resource",
+                            "key": "minimum_resource"
+                        }
+                    },
+                    {
+                        "id": {
+                            "is_required": true,
+                            "type": "string",
                             "value": "x-layer-zerion",
                             "description": "Worker's id, must be unique, for example '[network]-[worker]'",
                             "title": "ID",
@@ -7050,7 +9075,7 @@
                         "id": {
                             "is_required": true,
                             "type": "string",
-                            "value": "mastodon-core",
+                            "value": "mastodon-mastodon",
                             "description": "Worker's id, must be unique, for example '[network]-[worker]'",
                             "title": "ID",
                             "key": "id"
@@ -7066,7 +9091,7 @@
                         "worker": {
                             "is_required": true,
                             "type": "string",
-                            "value": "core",
+                            "value": "mastodon",
                             "description": "Name of the worker",
                             "title": "Worker",
                             "key": "worker"
@@ -7100,14 +9125,134 @@
                         "minimum_resource": {
                             "cpu_core": 0.5,
                             "memory_in_gb": 0.5,
-                            "disk_space_in_gb": 12,
+                            "disk_space_in_gb": 4,
                             "title": "Minimum Resource",
                             "key": "minimum_resource"
                         }
                     }
                 ]
             }
-        ]
+        ],
+        "ai": {
+            "id": "agentdata",
+            "worker_configs": {
+                "id": {
+                    "is_required": true,
+                    "type": "string",
+                    "value": "agentdata-core",
+                    "description": "Worker's id, must be unique, for example '[network]-[worker]'",
+                    "title": "ID",
+                    "key": "id"
+                },
+                "network": {
+                    "is_required": false,
+                    "type": "",
+                    "value": null,
+                    "description": "",
+                    "title": "",
+                    "key": ""
+                },
+                "worker": {
+                    "is_required": true,
+                    "type": "string",
+                    "value": "core",
+                    "description": "Name of the worker",
+                    "title": "Worker",
+                    "key": "worker"
+                },
+                "endpoint": {
+                    "is_required": false,
+                    "type": "url",
+                    "value": null,
+                    "description": "Your AgentData service URL",
+                    "title": "Endpoint",
+                    "key": "endpoint"
+                },
+                "parameters": {
+                    "agentdata_db_url": {
+                        "is_required": false,
+                        "type": "string",
+                        "value": null,
+                        "description": "AgentData database URL",
+                        "title": "AgentData DB URL",
+                        "key": "agentdata_db_url"
+                    },
+                    "openai_api_key": {
+                        "is_required": false,
+                        "type": "string",
+                        "value": null,
+                        "description": "OpenAI API Key for LLM integration",
+                        "title": "OpenAI API Key",
+                        "key": "openai_api_key"
+                    },
+                    "ollama_host": {
+                        "is_required": false,
+                        "type": "string",
+                        "value": null,
+                        "description": "Ollama host URL for local model hosting",
+                        "title": "Ollama Host",
+                        "key": "ollama_host"
+                    },
+                    "kaito_api_token": {
+                        "is_required": false,
+                        "type": "string",
+                        "value": null,
+                        "description": "Kaito API Token for Kaito integration",
+                        "title": "Kaito API Token",
+                        "key": "kaito_api_token"
+                    },
+                    "twitter": {
+                        "bearer_token": {
+                            "is_required": false,
+                            "type": "string",
+                            "value": null,
+                            "description": "Twitter Bearer Token for API access",
+                            "title": "Twitter Bearer Token",
+                            "key": "twitter.bearer_token"
+                        },
+                        "api_key": {
+                            "is_required": false,
+                            "type": "string",
+                            "value": null,
+                            "description": "Twitter API Key",
+                            "title": "Twitter API Key",
+                            "key": "twitter.api_key"
+                        },
+                        "api_secret": {
+                            "is_required": false,
+                            "type": "string",
+                            "value": null,
+                            "description": "Twitter API Secret",
+                            "title": "Twitter API Secret",
+                            "key": "twitter.api_secret"
+                        },
+                        "access_token": {
+                            "is_required": false,
+                            "type": "string",
+                            "value": null,
+                            "description": "Twitter Access Token",
+                            "title": "Twitter Access Token",
+                            "key": "twitter.access_token"
+                        },
+                        "access_token_secret": {
+                            "is_required": false,
+                            "type": "string",
+                            "value": null,
+                            "description": "Twitter Access Token Secret",
+                            "title": "Twitter Access Token Secret",
+                            "key": "twitter.access_token_secret"
+                        }
+                    }
+                },
+                "minimum_resource": {
+                    "cpu_core": 0.25,
+                    "memory_in_gb": 0.25,
+                    "disk_space_in_gb": 0,
+                    "title": "Minimum Resource",
+                    "key": "minimum_resource"
+                }
+            }
+        }
     },
     "network_assets": {
         "arbitrum": {
@@ -7194,6 +9339,11 @@
             "type": "ethereum",
             "name": "X Layer",
             "icon_url": "https://unpkg.com/@webisopen/icons-svg@latest/icons/x-layer-mono.svg"
+        },
+        "agentdata": {
+            "type": "agentdata",
+            "name": "AgentData",
+            "icon_url": "https://storage.googleapis.com/rss3-icon/open.svg"
         }
     },
     "worker_assets": {
